@@ -5,6 +5,7 @@ function resolve (dir) {
 }
 
 const vueConfig = {
+    publicPath: './',
     pages: {
         index: {
             entry: 'examples/main.js',
