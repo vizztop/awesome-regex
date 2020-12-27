@@ -70,6 +70,7 @@ export default {
     data () {
         return {
             ruleForm: { ruleList },
+            ruleList,
             keyword: ''
         };
     },
@@ -109,7 +110,7 @@ export default {
                 this.ruleForm.ruleList = ruleList;
                 return;
             }
-            this.ruleForm.ruleList = this.ruleForm.ruleList.filter(item => {
+            this.ruleForm.ruleList = this.ruleList.filter(item => {
                 if (item.title.includes(this.keyword)) {
                     return item;
                 }
